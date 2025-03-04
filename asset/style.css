@@ -1,0 +1,245 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+body.loading {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+body.loading::before {
+    content: 'Loading...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #000000;
+    z-index: 1000;
+}
+
+#module_updt {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#module_delete {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+#module_create {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+    width: 20%;
+    
+}
+
+#module_search  {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+    width: 20%;
+}
+#module_search_desc  {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+    width: 20%;
+}
+#module_search_dates  {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+    width: 20%;
+}
+#module_settings  {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+    width: 20%;
+}
+#module_updte  {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+    width: 20%;
+}
+#module_deletee  {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+    width: 20%;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+}
+
+input[type="date"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.but {
+    display: flex;             
+    gap: 10px;                 
+    padding: 20px;             
+    justify-content: center;   
+    background-color: #f4f4f4; 
+    border-radius: 10px;      
+  }
+  
+
+button {
+    background-color: #1a5998;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #515354;
+}
+
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #000000;
+    color: white;
+}
+
+table td {
+    color: #555;
+}
+
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+td[colspan="5"] {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+}
+
+.pagit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.pagit a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #325b87;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.pagit a:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    pointer-events: none;
+}
+
+.pagit a:first-child, .pagit a:last-child {
+    font-weight: bold;
+}
